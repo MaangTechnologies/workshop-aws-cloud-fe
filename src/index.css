@@ -13,7 +13,7 @@ code {
 }
 
 :root {
-  --primary-color: #483ea8;
+  --primary-color: #4d7734;
   --font-color: #6b7280;
   --bg-color: #23283d;
   --bg-color-2: #111827;
@@ -408,4 +408,9 @@ body::-webkit-scrollbar-thumb:hover {
 ul {
   list-style-position: outside;
   margin-left: -18px;
+}
+
+.validation-error{
+  font-size: 12px !important;
+  margin-left: 10px;
 }

@@ -6,4 +6,4 @@ export const getSignUpState = (state: SystemState) => state.auth.signup;
 
 export const getGoogleAuthState = (state: SystemState) => state.auth.googleauth;
 
-export const getBookState = (state: SystemState) => state.auth.get_book;
+export const getContactUsState = (state: SystemState) => state.auth.contact_us;

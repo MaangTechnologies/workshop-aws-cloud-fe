@@ -15,7 +15,7 @@ export interface SystemState {
       loader: boolean;
       error: any;
     };
-    get_book: {
+    contact_us: {
       data: any;
       loader: boolean;
       error: any;

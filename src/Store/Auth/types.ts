@@ -1,4 +1,4 @@
-import { SIGN_IN, SIGN_UP, GOOGLE_AUTH, GET_BOOK } from "./actionTypes";
+import { SIGN_IN, SIGN_UP, GOOGLE_AUTH, CONTACT_US } from "./actionTypes";
 
 interface Signin {
   type: typeof SIGN_IN;
@@ -15,9 +15,9 @@ interface GoogleAuth {
   payload: any;
 }
 
-interface GET_BOOK {
-  type: typeof GET_BOOK;
+interface CONTACT_US {
+  type: typeof CONTACT_US;
   payload: any;
 }
 
-export type authActionTypes = Signin | Signup | GoogleAuth | GET_BOOK;
+export type authActionTypes = Signin | Signup | GoogleAuth | CONTACT_US;

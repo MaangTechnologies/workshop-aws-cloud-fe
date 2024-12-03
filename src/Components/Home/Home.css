@@ -1,0 +1,289 @@
+.intro-section {
+    width: 100%;
+    padding: 90px 100px;
+    background-color: var(--white);
+  }
+  
+  .intro-img {
+    width: 427px;
+    height: 427px;
+    /* border-radius: 24px; */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+  }
+  
+  .intro-section .title-1 {
+    color: #4e4d4d;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 116.667% */
+    letter-spacing: 0.036px;
+  }
+  
+  .intro-section .title-2 {
+    color: #000;
+    font-family: var(--normal-font);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 54px; /* 112.5% */
+    letter-spacing: 0.12px;
+  }
+  
+  .intro-section .title-3 {
+    color: #4e4d4d;
+    font-family: var(--normal-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 116.667% */
+    letter-spacing: 0.036px;
+  }
+  
+  .intro-section .title-4 {
+    font-family: var(--normal-font);
+    font-size: 28.903px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1.936px;
+  }
+  
+  .intro-layout .title-5 {
+    font-family: var(--normal-font);
+    font-size: 14.451px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.968px;
+  }
+  
+  .intro-section .feature-img-layout {
+    width: auto;
+    height: 200.49px;
+    flex-shrink: 0;
+  }
+  
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-us .contact-us-title {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .contact-us .form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 55px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--primary-color);
+  }
+  
+  .contact-us .form input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid var(--border);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+  
+  .contact-us .form input::placeholder,
+  .contact-us .form textarea::placeholder {
+    color: var(--grey);
+    font-family: var(--normal-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .contact-us .form textarea {
+    height: 200px;
+    width: 100%;
+    border: 1px solid var(--grey);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+  
+  .contact-us .form input:focus,
+  .contact-us .form textarea:focus {
+    outline: none;
+    border: 2px solid var(--primary-color);
+  }
+  
+  .contact-us .form button {
+    width: 146.688px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: white;
+    outline: none;
+    border: none;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--normal-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 166.667% */
+    letter-spacing: -0.36px;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .intro-section,
+    .intro-layout {
+      padding: 90px 90px;
+    }
+    .intro-img {
+      width: 327px;
+      height: 327px;
+    }
+    .intro-section .title-1 {
+      color: #4e4d4d;
+      font-family: var(--normal-font);
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 116.667% */
+      letter-spacing: 0.036px;
+    }
+  
+    .intro-section .title-2 {
+      color: #000;
+      font-family: var(--normal-font);
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 54px; /* 112.5% */
+      letter-spacing: 0.12px;
+    }
+  
+    .intro-section .title-3 {
+      color: #4e4d4d;
+      font-family: var(--normal-font);
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 116.667% */
+      letter-spacing: 0.036px;
+    }
+    .intro-section .feature-img-layout {
+      width: 150.49px;
+      height: 150.49px;
+      flex-shrink: 0;
+    }
+    .intro-section .title-4 {
+      font-family: var(--normal-font);
+      font-size: 24.903px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: -1.936px;
+    }
+  
+    .intro-layout .title-5 {
+      font-family: var(--normal-font);
+      font-size: 12.451px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: -0.968px;
+    }
+  
+    .contact-us .form {
+      width: 90%;
+    }
+    .contact-us .form input,
+    .contact-us .form textarea {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .intro-section,
+    .intro-layout {
+      padding: 30px 30px;
+      display: flex !important;
+      flex-direction: column-reverse !important;
+      gap: 50px;
+    }
+    .intro-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .intro-img {
+      width: 227px;
+      height: 227px;
+    }
+    .intro-section .title-1 {
+      color: #4e4d4d;
+      font-family: var(--normal-font);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px; /* 116.667% */
+      letter-spacing: 0.036px;
+    }
+  
+    .intro-section .title-2 {
+      color: #000;
+      font-family: var(--normal-font);
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 40px; /* 112.5% */
+      letter-spacing: 0.12px;
+    }
+  
+    .intro-section .title-3 {
+      color: #4e4d4d;
+      font-family: var(--normal-font);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px; /* 116.667% */
+      letter-spacing: 0.036px;
+    }
+  
+    .intro-section .feature-img-layout {
+      width: 100.49px;
+      height: 100.49px;
+      flex-shrink: 0;
+    }
+    .intro-section .title-4 {
+      font-family: var(--normal-font);
+      font-size: 20.903px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: -1.936px;
+    }
+  
+    .intro-layout .title-5 {
+      font-family: var(--normal-font);
+      font-size: 10.451px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: -0.968px;
+    }
+  
+    .contact-us .form {
+      width: 90%;
+    }
+    .contact-us .form input,
+    .contact-us .form textarea {
+      width: 100%;
+    }
+  }
+  

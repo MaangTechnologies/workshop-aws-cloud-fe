@@ -1,28 +1,52 @@
 .header-section{
     height: auto;
     width: 100%;
-    background-color: #23283d !important;
-    color: var(--white);
-    padding: 30px 100px;
+    background: linear-gradient(180deg, rgba(101, 168, 62, 0.2) 0%, rgba(233, 255, 231, 0.1) 100%);
+    color: white;
+    padding: 0px 100px;
+}
+
+.header-section .logo{
+    width: 130px;
 }
 
 .custom-toggler {
     border: none;
     outline: none;
+    width: fit-content;
+    background-color: var(--primary-color) !important;
+  }
+
+  .custom-toggler:focus{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
   }
   
   .custom-toggler .navbar-toggler-icon {
+    background-color: var(--primary-color);
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
   
 
 .header-section .link{
-    color: var(--white)!important;
+    color: var(--primary-color) !important;
     transition: 0.3s;
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
+    font-size: 16px;
+}
+
+.header-section .header-link-badge{
+    position: relative;
+    margin-top: -35px;
+    margin-left: -30px;
+    font-size: 10px;
+    /* position: absolute;
+    margin-top: -30px;
+    margin-left: 150px; */
 }
 
 .header-section .link:hover{
@@ -40,12 +64,15 @@
     }
 
     .header-section .link{
-        color: var(--white) !important;
+        color: var(--primary-color) !important;
         transition: 0.3s;
         display: flex;
         align-items: center;
         gap: 5px;
         justify-content: center;
+    }
+    .header-section .logo{
+        width: 110px;
     }
 }
 
@@ -53,5 +80,8 @@
 @media only screen and (max-width: 768px) {
     .header-section .link , .header-section .active-link{
         text-align: center;
+    }
+    .header-section .logo{
+        width: 100px;
     }
 }

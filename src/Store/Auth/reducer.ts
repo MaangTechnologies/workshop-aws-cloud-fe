@@ -1,4 +1,4 @@
-import {  SIGN_IN, SIGN_UP , GOOGLE_AUTH, GET_BOOK } from "./actionTypes";
+import { SIGN_IN, SIGN_UP, GOOGLE_AUTH, CONTACT_US } from "./actionTypes";
 import { authActionTypes } from "./types";
 
 export const initialLoginState = {
@@ -17,7 +17,7 @@ export const initialLoginState = {
     loader: false,
     error: null,
   },
-  get_book: {
+  contact_us: {
     data: [],
     loader: false,
     error: null,
@@ -56,16 +56,16 @@ export default (state = initialLoginState, action: authActionTypes) => {
           error: action.payload.error,
         },
       };
-      case GET_BOOK:
-        return {
-          ...state,
-          get_book: {
-            ...state.get_book,
-            data: action.payload.data,
-            loader: action.payload.loader,
-            error: action.payload.error,
-          },
-        };
+    case CONTACT_US:
+      return {
+        ...state,
+        contact_us: {
+          ...state.contact_us,
+          data: action.payload.data,
+          loader: action.payload.loader,
+          error: action.payload.error,
+        },
+      };
     default:
       return state;
   }

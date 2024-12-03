@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { FaHome } from "react-icons/fa";
+import { FaBriefcase, FaHome, FaInfoCircle, FaPhoneAlt, FaWrench } from "react-icons/fa";
+import Logo from "../../Assets/Logo.png";
 import "./Header.css";
 
 const Header = () => {
@@ -15,7 +16,12 @@ const Header = () => {
   };
   const [expanded, setExpanded] = useState(false);
 
-  const navLinks = [{ id: 1, name: "Home", icon: <FaHome />, navlink: "/" }];
+  const navLinks = [
+    { id: 2, name: "Services", icon: <FaWrench />, navlink: "#services" },
+    { id: 3, name: "Products", icon: <FaBriefcase />, navlink: "#products" },
+    { id: 5, name: "Contact Us", icon: <FaPhoneAlt />, navlink: "#contact-us" },
+  ];
+
 
   const handleLinkClick = () => {
     setExpanded(false);
@@ -25,12 +31,13 @@ const Header = () => {
     <Navbar expanded={expanded} expand="lg" className="header-section">
       <Container>
         <Navbar.Brand href="#" className="text-light">
-          <span className="heading-font">
+          <img src={Logo} className="logo" alt="logo" />
+          {/* <span className="heading-font">
             <a className="color-white d-flex align-items-center gap-2" href="/">
-            <img src="https://i.ibb.co/5hbyTsd/2232688.png" alt="" width="50px" height="auto" />
+              <img src="https://i.ibb.co/5hbyTsd/2232688.png" alt="" width="50px" height="auto" />
               BookHunt
             </a>
-          </span>
+          </span> */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
